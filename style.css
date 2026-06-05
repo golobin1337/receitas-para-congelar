@@ -141,7 +141,9 @@ html, body {
   align-items: center;
   flex-wrap: wrap;
 }
-.sp-trust span { display: flex; align-items: center; gap: 5px; }
+.sp-trust-item  { display: flex; align-items: center; gap: 5px; }
+.sp-trust-icon  { font-style: normal; }
+.sp-trust-label { }
 
 /* ─── Hero Image ────────────────────────────────────── */
 .sp-hero-img {
@@ -207,6 +209,39 @@ html, body {
 .sp-grid-label { font-size: 14px; font-weight: 500; margin-bottom: 4px; color: #2C2C2A; }
 .sp-grid-desc  { font-size: 13px; color: #888780; line-height: 1.5; }
 
+/* ─── Feature list (dobra 2) ────────────────────────── */
+.sp-feature-list { margin-top: 36px; }
+
+.sp-feature-item {
+  padding: 20px 0;
+  border-top: 1px solid #D3D1C7;
+}
+.sp-feature-item:last-child { border-bottom: 1px solid #D3D1C7; }
+
+.sp-feature-num {
+  display: block;
+  font-size: 11px;
+  font-style: italic;
+  color: #C8956A;
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+}
+
+.sp-feature-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2C2C2A;
+  margin: 0 0 6px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.sp-feature-desc {
+  font-size: 14px;
+  color: #888780;
+  line-height: 1.55;
+  margin: 0;
+}
+
 /* ─── Dark section ──────────────────────────────────── */
 .sp-dark {
   background: #1E3A2B;
@@ -223,6 +258,23 @@ html, body {
 }
 .sp-dark .sp-section-title     { color: #F5F0E8; }
 .sp-dark .sp-section-title em  { color: #A8C9A0; }
+
+.sp-dark-img-wrap {
+  border-radius: 8px;
+  overflow: hidden;
+  background: #2A4A35;
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sp-dark-img-placeholder {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  min-height: 340px;
+}
 
 .sp-bullet-list { list-style: none; padding: 0; margin: 0 0 28px; }
 .sp-bullet-list li {
@@ -451,54 +503,110 @@ html, body {
   .sp-hero {
     display: flex;
     flex-direction: column;
-    padding: 32px 20px 36px;
+    padding: 36px 20px 40px;
     gap: 0;
   }
 
+  /* título centrado com linha decorativa */
   .sp-hero-heading {
-    text-align: left;
+    text-align: center;
     margin-bottom: 20px;
   }
 
   .sp-hero h1 {
-    font-size: 40px;
+    font-size: 38px;
     line-height: 1.05;
-    margin-bottom: 12px;
+    margin-bottom: 0;
+  }
+
+  .sp-hero h1::after {
+    content: '';
+    display: block;
+    width: 44px;
+    height: 2px;
+    background: #C8956A;
+    border-radius: 2px;
+    margin: 14px auto 16px;
   }
 
   .sp-hero .sp-sub {
-    font-size: 15px;
+    font-size: 14px;
+    text-align: center;
     margin-bottom: 0;
   }
 
+  /* imagem full-width */
   .sp-hero-img {
     width: 100%;
     height: 240px;
-    border-radius: 8px;
-    margin-bottom: 0;
+    border-radius: 10px;
+    margin: 20px 0 0;
     position: static;
   }
 
+  /* CTA e conteúdo abaixo */
   .sp-hero-cta {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    padding-top: 24px;
+    padding-top: 20px;
   }
 
   .sp-hero-cta .sp-cta-btn {
     width: 100%;
     text-align: center;
-    font-size: 13px;
-    padding: 16px;
-    margin-bottom: 14px;
+    font-size: 14px;
+    padding: 17px 20px;
+    margin-bottom: 16px;
     background: #1E3A2B;
     color: #F5F0E8;
+    letter-spacing: 0.06em;
   }
 
-  .sp-hero-cta .sp-price-row  { justify-content: flex-start; }
-  .sp-hero-note               { display: block; }
-  .sp-hero-cta .sp-trust      { justify-content: flex-start; gap: 12px; }
+  .sp-hero-cta .sp-price-row {
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .sp-hero-cta .sp-price-new { font-size: 36px; }
+
+  /* nota descritiva */
+  .sp-hero-note {
+    display: block;
+    font-size: 14px;
+    line-height: 1.65;
+    color: #5F5E5A;
+    margin-bottom: 20px;
+  }
+
+  /* trust badges — 3 colunas verticais */
+  .sp-hero-cta .sp-trust {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+    padding-top: 16px;
+    border-top: 1px solid #D3D1C7;
+  }
+
+  .sp-hero-cta .sp-trust-item {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    line-height: 1.4;
+    padding: 8px 4px;
+  }
+
+  .sp-hero-cta .sp-trust-icon {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 4px;
+  }
 
   /* ── Grid 3 (2 cols on mobile) ── */
   .sp-grid-3 { grid-template-columns: 1fr 1fr; }
@@ -508,7 +616,11 @@ html, body {
     grid-template-columns: 1fr;
     gap: 28px;
   }
-  .sp-img-grid { grid-template-columns: repeat(3, 1fr); }
+  .sp-dark-img-wrap {
+    min-height: 240px;
+    border-radius: 8px;
+  }
+  .sp-dark-img-placeholder { min-height: 240px; }
 
   /* ── Chapters ── */
   .sp-chapter-grid { grid-template-columns: 1fr 1fr; }
@@ -520,9 +632,30 @@ html, body {
   .sp-bonus-grid { grid-template-columns: 1fr; }
 
   /* ── Plans ── */
-  .sp-plans-grid { grid-template-columns: 1fr; }
+  .sp-plans-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
 
-  .sp-plan-card.featured { margin-top: 20px; }
+  .sp-plan-card { padding: 16px 12px; }
+
+  .sp-plan-name  { font-size: 17px; margin-bottom: 12px; }
+  .sp-plan-tier  { font-size: 9px; }
+
+  .sp-plan-list li {
+    font-size: 11px;
+    padding: 4px 0;
+    gap: 5px;
+  }
+
+  .sp-plan-bonus-label { font-size: 9px; }
+
+  .sp-plan-price-old { font-size: 11px; }
+  .sp-plan-price-new { font-size: 26px; }
+
+  .sp-plan-nudge { font-size: 11px; }
+
+  .sp-popular-badge { font-size: 9px; padding: 3px 10px; }
 
   /* ── Guarantee ── */
   .sp-guarantee-inner {
