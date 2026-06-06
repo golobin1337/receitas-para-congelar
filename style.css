@@ -379,7 +379,7 @@ a.sp-cta-btn { text-decoration: none; }
 .sp-bonus-inner   { max-width: 860px; margin: 0 auto; }
 .sp-bonus-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
   margin-top: 36px;
 }
