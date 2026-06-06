@@ -64,7 +64,7 @@ html, body {
 
 .sp-hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 52px;
+  font-size: 58px;
   line-height: 1.1;
   margin: 0 0 8px;
   font-weight: 400;
@@ -96,7 +96,7 @@ html, body {
 
 /* ─── Sub / Price / CTA ─────────────────────────────── */
 .sp-sub {
-  font-size: 17px;
+  font-size: 19px;
   color: #5F5E5A;
   margin: 0 0 24px;
   font-weight: 300;
@@ -111,8 +111,8 @@ html, body {
   margin-bottom: 16px;
   flex-wrap: wrap;
 }
-.sp-price-old  { font-size: 13px; color: #888780; text-decoration: line-through; }
-.sp-price-new  { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 600; color: #7A4F30; }
+.sp-price-old  { font-size: 13px; color: #C0392B; text-decoration: line-through; }
+.sp-price-new  { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 600; color: #2E7D52; }
 .sp-price-desc { font-size: 12px; color: #888780; }
 
 a.sp-cta-btn { text-decoration: none; }
@@ -199,7 +199,7 @@ a.sp-cta-btn { text-decoration: none; }
 
 .sp-section-title {
   font-family: 'Playfair Display', serif;
-  font-size: 36px;
+  font-size: 42px;
   font-weight: 400;
   line-height: 1.2;
   margin: 0 0 8px;
@@ -207,7 +207,7 @@ a.sp-cta-btn { text-decoration: none; }
 }
 .sp-section-title em { font-style: italic; color: #7A4F30; }
 
-.sp-section-sub { font-size: 15px; color: #5F5E5A; margin: 0 0 36px; }
+.sp-section-sub { font-size: 17px; color: #5F5E5A; margin: 0 0 36px; }
 
 /* ─── Grid 3 ────────────────────────────────────────── */
 .sp-grid-3 {
@@ -241,7 +241,7 @@ a.sp-cta-btn { text-decoration: none; }
 }
 
 .sp-feature-title {
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 500;
   color: #2C2C2A;
   margin: 0 0 6px;
@@ -249,7 +249,7 @@ a.sp-cta-btn { text-decoration: none; }
 }
 
 .sp-feature-desc {
-  font-size: 14px;
+  font-size: 16px;
   color: #888780;
   line-height: 1.55;
   margin: 0;
@@ -293,7 +293,7 @@ a.sp-cta-btn { text-decoration: none; }
 .sp-bullet-list li {
   padding: 10px 0;
   border-bottom: 1px solid rgba(255,255,255,0.1);
-  font-size: 14px;
+  font-size: 16px;
   color: #C8D9C4;
   display: flex;
   align-items: flex-start;
@@ -402,7 +402,7 @@ a.sp-cta-btn { text-decoration: none; }
 
 /* ─── Plans ─────────────────────────────────────────── */
 .sp-plans { padding: 56px 40px; max-width: 860px; margin: 0 auto; }
-.sp-plans-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-top: 36px; }
+.sp-plans-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-top: 36px; padding: 0 16px; }
 .sp-plan-card  { border: 1px solid #D3D1C7; border-radius: 0; padding: 28px; background: #FAF7F2; position: relative; }
 .sp-plan-card:first-child { border-right: none; }
 .sp-plan-card.featured { background: #1E3A2B; border-color: #1E3A2B; color: #F5F0E8; border-radius: 0; }
@@ -454,16 +454,16 @@ a.sp-cta-btn { text-decoration: none; }
 }
 .sp-testi-card  { background: #FAF7F2; border: 1px solid #D3D1C7; border-radius: 4px; padding: 16px; }
 .sp-stars       { color: #C8956A; font-size: 13px; margin-bottom: 8px; }
-.sp-testi-text  { font-size: 13px; color: #5F5E5A; line-height: 1.6; margin-bottom: 12px; }
-.sp-testi-author{ font-size: 12px; font-weight: 500; color: #2C2C2A; }
-.sp-testi-city  { font-size: 11px; color: #888780; }
+.sp-testi-text  { font-size: 15px; color: #5F5E5A; line-height: 1.6; margin-bottom: 12px; }
+.sp-testi-author{ font-size: 14px; font-weight: 500; color: #2C2C2A; }
+.sp-testi-city  { font-size: 13px; color: #888780; }
 
 /* ─── FAQ ───────────────────────────────────────────── */
 .sp-faq { background: #F0EBE0; padding: 56px 40px; }
 .sp-faq-inner { max-width: 860px; margin: 0 auto; }
 .sp-faq-item  { border-bottom: 1px solid #D3D1C7; padding: 16px 0; }
 .sp-faq-q {
-  font-size: 15px; font-weight: 500; color: #2C2C2A;
+  font-size: 17px; font-weight: 500; color: #2C2C2A;
   display: flex; justify-content: space-between; align-items: center;
   cursor: pointer; user-select: none;
 }
@@ -471,7 +471,7 @@ a.sp-cta-btn { text-decoration: none; }
 .sp-faq-icon { transition: transform 0.2s ease; font-style: normal; }
 .sp-faq-item.open .sp-faq-icon { transform: rotate(45deg); }
 .sp-faq-a {
-  font-size: 13px; color: #888780; margin-top: 10px; line-height: 1.7; display: none;
+  font-size: 15px; color: #888780; margin-top: 10px; line-height: 1.7; display: none;
 }
 .sp-faq-item.open .sp-faq-a { display: block; }
 
@@ -533,15 +533,6 @@ a.sp-cta-btn { text-decoration: none; }
     margin-bottom: 0;
   }
 
-  .sp-hero h1::after {
-    content: '';
-    display: block;
-    width: 44px;
-    height: 2px;
-    background: #C8956A;
-    border-radius: 2px;
-    margin: 14px auto 16px;
-  }
 
   .sp-hero .sp-sub {
     font-size: 14px;
