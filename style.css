@@ -383,7 +383,8 @@ a.sp-cta-btn { text-decoration: none; }
   gap: 16px;
   margin-top: 36px;
 }
-.sp-bonus-card { background: #F5F0E8; border: 1px solid #D3D1C7; border-radius: 4px; padding: 20px; }
+.sp-bonus-card { background: #F5F0E8; border: 1px solid #D3D1C7; border-radius: 4px; padding: 20px; overflow: hidden; }
+.sp-bonus-img  { width: calc(100% + 40px); margin: -20px -20px 16px; display: block; height: 180px; object-fit: cover; }
 .sp-bonus-tag  {
   font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #C8956A;
   margin-bottom: 6px; display: flex; justify-content: space-between; align-items: center;
