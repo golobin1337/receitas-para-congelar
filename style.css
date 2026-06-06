@@ -426,6 +426,7 @@ a.sp-cta-btn { text-decoration: none; }
 .sp-plan-list li.dimmed { opacity: 0.4; }
 .sp-check { color: #7A4F30; font-size: 14px; }
 .sp-plan-card.featured .sp-check { color: #A8C9A0; }
+.sp-bonus-icon { font-size: 13px; }
 .sp-plan-bonus-label { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #888780; margin-bottom: 8px; }
 .sp-plan-card.featured .sp-plan-bonus-label { color: #5F8B6E; }
 .sp-plan-price { margin: 20px 0 16px; }
