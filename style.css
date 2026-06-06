@@ -389,9 +389,10 @@ html, body {
 
 /* ─── Plans ─────────────────────────────────────────── */
 .sp-plans { padding: 56px 40px; max-width: 860px; margin: 0 auto; }
-.sp-plans-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 36px; }
-.sp-plan-card  { border: 1px solid #D3D1C7; border-radius: 4px; padding: 28px; background: #FAF7F2; position: relative; }
-.sp-plan-card.featured { background: #1E3A2B; border-color: #1E3A2B; color: #F5F0E8; }
+.sp-plans-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-top: 36px; }
+.sp-plan-card  { border: 1px solid #D3D1C7; border-radius: 0; padding: 28px; background: #FAF7F2; position: relative; }
+.sp-plan-card:first-child { border-right: none; }
+.sp-plan-card.featured { background: #1E3A2B; border-color: #1E3A2B; color: #F5F0E8; border-radius: 0; }
 .sp-popular-badge {
   position: absolute; top: -11px; left: 50%; transform: translateX(-50%);
   background: #C8956A; color: #fff; font-size: 10px; letter-spacing: 0.1em;
@@ -632,30 +633,51 @@ html, body {
   .sp-bonus-grid { grid-template-columns: 1fr; }
 
   /* ── Plans ── */
+  .sp-plans { padding: 40px 0; }
+
   .sp-plans-grid {
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 0;
+    margin-top: 28px;
   }
 
-  .sp-plan-card { padding: 16px 12px; }
+  .sp-plan-card {
+    padding: 20px 14px;
+    border-radius: 0;
+    border: none;
+    border-top: 1px solid #D3D1C7;
+    border-bottom: 1px solid #D3D1C7;
+  }
 
-  .sp-plan-name  { font-size: 17px; margin-bottom: 12px; }
-  .sp-plan-tier  { font-size: 9px; }
+  .sp-plan-card:first-child {
+    border-left: 1px solid #D3D1C7;
+    border-right: none;
+  }
+
+  .sp-plan-card.featured {
+    border: none;
+  }
+
+  .sp-plan-tier        { font-size: 0.85rem; }
+  .sp-plan-name        { font-size: 1.1rem; margin-bottom: 14px; line-height: 1.2; }
 
   .sp-plan-list li {
-    font-size: 11px;
-    padding: 4px 0;
+    font-size: 0.85rem;
+    padding: 5px 0;
     gap: 5px;
+    line-height: 1.4;
   }
 
-  .sp-plan-bonus-label { font-size: 9px; }
+  .sp-plan-bonus-label { font-size: 0.85rem; margin-top: 4px; }
+  .sp-plan-price-old   { font-size: 0.85rem; }
+  .sp-plan-price-new   { font-size: 1.5rem; }
+  .sp-plan-nudge       { font-size: 0.85rem; }
+  .sp-popular-badge    { font-size: 0.75rem; padding: 3px 10px; }
 
-  .sp-plan-price-old { font-size: 11px; }
-  .sp-plan-price-new { font-size: 26px; }
-
-  .sp-plan-nudge { font-size: 11px; }
-
-  .sp-popular-badge { font-size: 9px; padding: 3px 10px; }
+  .sp-plan-card .sp-cta-btn {
+    font-size: 0.85rem;
+    padding: 12px 8px;
+  }
 
   /* ── Guarantee ── */
   .sp-guarantee-inner {
