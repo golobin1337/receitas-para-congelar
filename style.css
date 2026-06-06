@@ -403,8 +403,8 @@ a.sp-cta-btn { text-decoration: none; }
 
 /* ─── Plans ─────────────────────────────────────────── */
 .sp-plans { padding: 56px 40px; max-width: 860px; margin: 0 auto; }
-.sp-plans-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-top: 36px; padding: 0 16px; }
-.sp-plan-card  { border: 1px solid #D3D1C7; border-radius: 0; padding: 28px; background: #FAF7F2; position: relative; }
+.sp-plans-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-top: 36px; padding: 0 16px; align-items: stretch; }
+.sp-plan-card  { border: 1px solid #D3D1C7; border-radius: 0; padding: 28px; background: #FAF7F2; position: relative; display: flex; flex-direction: column; height: 100%; }
 .sp-plan-card:first-child { border-right: none; }
 .sp-plan-card.featured { background: #1E3A2B; border-color: #1E3A2B; color: #F5F0E8; border-radius: 0; }
 .sp-popular-badge {
@@ -429,7 +429,7 @@ a.sp-cta-btn { text-decoration: none; }
 .sp-bonus-icon { font-size: 13px; }
 .sp-plan-bonus-label { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #888780; margin-bottom: 8px; }
 .sp-plan-card.featured .sp-plan-bonus-label { color: #5F8B6E; }
-.sp-plan-price { margin: 20px 0 16px; }
+.sp-plan-price { margin: auto 0 16px; }
 .sp-plan-price-old { font-size: 13px; color: #888780; text-decoration: line-through; display: block; margin-bottom: 2px; }
 .sp-plan-price-new { font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 600; color: #7A4F30; }
 .sp-plan-card.featured .sp-plan-price-new { color: #C8956A; }
