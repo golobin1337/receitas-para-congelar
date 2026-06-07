@@ -348,6 +348,7 @@ a.sp-cta-btn { text-decoration: none; }
   background: #D3D1C7;
   border: 1px solid #D3D1C7;
   margin-top: 32px;
+  margin-bottom: 48px;
 }
 .sp-chapter-cell  { background: #F5F0E8; padding: 20px; }
 .sp-chapter-tag   { font-size: 10px; color: #C8956A; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 6px; }
@@ -364,6 +365,7 @@ a.sp-cta-btn { text-decoration: none; }
   aspect-ratio: 1;
   background: #D4C9B5;
   border-radius: 2px;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -385,6 +387,7 @@ a.sp-cta-btn { text-decoration: none; }
 }
 .sp-bonus-card { background: #F5F0E8; border: 1px solid #D3D1C7; border-radius: 4px; padding: 20px; overflow: hidden; }
 .sp-bonus-img  { width: calc(100% + 40px); margin: -20px -20px 16px; display: block; height: 180px; object-fit: cover; }
+.sp-gallery-img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .sp-bonus-tag  {
   font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #C8956A;
   margin-bottom: 6px; display: flex; justify-content: space-between; align-items: center;
@@ -532,7 +535,7 @@ a.sp-cta-btn { text-decoration: none; }
   .sp-hero h1 {
     font-size: 38px;
     line-height: 1.05;
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 
 
