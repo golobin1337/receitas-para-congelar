@@ -517,7 +517,7 @@ a.sp-cta-btn { text-decoration: none; }
   .sp-divider     { margin: 0 20px; }
 
   /* section titles */
-  .sp-section-title { font-size: 26px; }
+  .sp-section-title { font-size: 28px; line-height: 1.2; }
 
   /* ── Hero ── */
   .sp-hero {
@@ -642,7 +642,8 @@ a.sp-cta-btn { text-decoration: none; }
   .sp-gallery { grid-template-columns: repeat(2, 1fr); }
 
   /* ── Bonus ── */
-  .sp-bonus-grid { grid-template-columns: 1fr; }
+  .sp-bonus-grid { grid-template-columns: 1fr 1fr; }
+  .sp-bonus-img  { height: 130px; }
 
   /* ── Plans ── */
   .sp-plans { padding: 40px 0; }
@@ -698,7 +699,13 @@ a.sp-cta-btn { text-decoration: none; }
   }
 
   /* ── Testimonials ── */
-  .sp-testi-grid { grid-template-columns: 1fr; }
+  .sp-testi-grid { grid-template-columns: 1fr 1fr; }
+
+  /* ── Testi ── */
+  .sp-testi-text   { font-size: 13px; }
+  .sp-testi-author { font-size: 13px; }
+  .sp-testi-city   { font-size: 11px; }
+  .sp-testi-card   { padding: 16px; }
 
   /* ── FAQ ── */
   .sp-faq-q { font-size: 16px; }
