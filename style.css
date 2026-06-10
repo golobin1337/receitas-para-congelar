@@ -640,8 +640,8 @@ a.sp-cta-btn { text-decoration: none; }
   .sp-gallery { grid-template-columns: repeat(2, 1fr); }
 
   /* ── Bonus ── */
-  .sp-bonus-grid { grid-template-columns: 1fr 1fr; }
-  .sp-bonus-img  { height: 130px; }
+  .sp-bonus-grid { grid-template-columns: 1fr; }
+  .sp-bonus-img  { height: 200px; }
 
   /* ── Plans ── */
   .sp-plans { padding: 40px 0; }
