@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap');
-
 /* ─── Base ──────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -426,7 +424,7 @@ a.sp-cta-btn { text-decoration: none; }
 .sp-plan-card.featured .sp-plan-list li { color: #A8C9A0; border-bottom-color: rgba(255,255,255,0.08); }
 .sp-plan-list li.active { color: #2C2C2A; }
 .sp-plan-card.featured .sp-plan-list li.active { color: #F5F0E8; }
-.sp-plan-list li.dimmed { opacity: 0.4; }
+.sp-plan-list li.dimmed { opacity: 0.5; text-decoration: line-through; }
 .sp-check { color: #7A4F30; font-size: 14px; }
 .sp-plan-card.featured .sp-check { color: #A8C9A0; }
 .sp-bonus-icon { font-size: 13px; }
