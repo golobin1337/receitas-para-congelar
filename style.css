@@ -573,12 +573,15 @@ a.sp-cta-btn { text-decoration: none; }
   .sp-hero-cta {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     padding-top: 20px;
+    text-align: center;
+    width: 100%;
   }
 
   .sp-hero-cta .sp-cta-btn {
     width: 100%;
+    align-self: stretch;
     text-align: center;
     font-size: 14px;
     padding: 17px 20px;
@@ -614,6 +617,8 @@ a.sp-cta-btn { text-decoration: none; }
     gap: 4px;
     padding-top: 16px;
     border-top: 1px solid #D3D1C7;
+    width: 100%;
+    align-self: stretch;
   }
 
   .sp-hero-cta .sp-trust-item {
