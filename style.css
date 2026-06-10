@@ -697,7 +697,7 @@ a.sp-cta-btn { text-decoration: none; }
   }
 
   /* ── Testimonials ── */
-  .sp-testi-grid { grid-template-columns: 1fr 1fr; }
+  .sp-testi-grid { grid-template-columns: 1fr; }
 
   /* ── Testi ── */
   .sp-testi-text   { font-size: 13px; }
